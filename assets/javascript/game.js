@@ -12,32 +12,40 @@
 var userGuess = event.key;
 
 // Randomly chooses a choice from the options array. This is the Computer's guess.
-var computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)]
+var computerGuess = computerOptions[Math.floor(Math.random() * computerOptions.length)]
 
+// Alerts the key the user pressed (userGuess).
+alert("User guess: " + userGuess);
+
+// Alerts the Computer's guess.
+alert("Computer guess: " + computerGuess);
+
+//Win,lose,tie options
 
 if ((userGuess === "r") || (userGuess === "p" ) || (userGuess === "s")){
 
 
-if ((userGuess === "r" ) && (computerGuess === "p")){
-  lose++
-}
-else if((userGuess === "r") && (computerGuess === "s")){
-  win++
-}
-else if ((userGuess === "p") && (computerGuess === "r")){
-  win++
-}
-else if((userGuess === "p") && (computerGuess === "s")){
-  lose++
-}
-else if ((userGuess === "s") && (computerGuess == "r")){
-  lose++
-}
-  else if ((userGuess === "s") && (computerGuess === "p")){
-      win++
-  }
-  else if (userGuess === computerGuess){
-    ties++
-  }
-  }
-}
+    if ((userGuess === "r" ) && (computerGuess === "p")){
+      loses++
+    }
+    else if((userGuess === "r") && (computerGuess === "s")){
+      wins++
+    }
+    else if ((userGuess === "p") && (computerGuess === "r")){
+      wins++
+    }
+    else if((userGuess === "p") && (computerGuess === "s")){
+      loses++
+    }
+    else if ((userGuess === "s") && (computerGuess == "r")){
+      loses++
+    }
+      else if ((userGuess === "s") && (computerGuess === "p")){
+          wins++
+      }
+      else if (userGuess === computerGuess){
+        ties++
+      }
+      }
+
+    }
