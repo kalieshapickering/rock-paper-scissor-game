@@ -40,12 +40,15 @@ if ((userGuess === "r") || (userGuess === "p" ) || (userGuess === "s")){
     else if ((userGuess === "s") && (computerGuess == "r")){
       loses++
     }
-      else if ((userGuess === "s") && (computerGuess === "p")){
+    else if ((userGuess === "s") && (computerGuess === "p")){
           wins++
       }
-      else if (userGuess === computerGuess){
+     else if (userGuess === computerGuess){
         ties++
       }
       }
 
+      //Alert totals
+
+    alert("Scoreboard: Wins:" + wins + " Loses: " + loses + " Ties: " + ties);
     }
